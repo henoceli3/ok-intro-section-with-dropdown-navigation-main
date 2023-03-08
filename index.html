@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pages/style.css">
+    <link rel="stylesheet" href="Pages/mobile-style.css">
+    <link rel="stylesheet" href="Pages/body.css">
+    <title>Snap</title>
+</head>
+<body id="body">
+    <header class="header" id="header">
+        <div class="first-part-header">
+            <div class="logo"><a href="#"><img src="images/logo.svg"></a></div><!--logo-->
+            <nav class="menu">
+                <ul class="menu-ul">
+                    <li class="menu-items menu-drpdown">
+                        <a href="#">Features</a>
+                        <ul class="sous-menu-ul">
+                            <li class="sous-menu-items"><a href="#"><img class="icone-sous-menu-ul" src="images/icon-todo.svg">Todo List</a></li><!--sous-menu-items -->
+                            <li class="sous-menu-items"><a href="#"><img class="icone-sous-menu-ul" src="images/icon-calendar.svg">Calendar</a></li><!--sous-menu-items -->
+                            <li class="sous-menu-items"><a href="#"><img class="icone-sous-menu-ul" src="images/icon-reminders.svg">Reminders</a></li><!--sous-menu-items -->
+                            <li class="sous-menu-items"><a href="#"><img class="icone-sous-menu-ul" src="images/icon-planning.svg">Planning</a></li><!--sous-menu-items -->
+                        </ul>
+                    </li><!--li-1-->
+                    <li class="menu-items menu-drpdown">
+                        <a href="#">Company</a>
+                        <ul class="sous-menu-ul">
+                            <li class="sous-menu-items"><a href="#">History</a></li><!--sous-menu-items -->
+                            <li class="sous-menu-items"><a href="#">Our Team</a></li><!--sous-menu-items -->
+                            <li class="sous-menu-items"><a href="#">Blog</a></li><!--sous-menu-items -->
+                        </ul>
+                    </li><!--li-3-->
+                    <li class="menu-items menu-items-single"><a href="#">Careers</a></li><!--li-3 -->
+                    <li class="menu-items menu-items-single"><a href="#">About</a></li><!--li-4-->
+                </ul><!--menu-->
+            </nav><!--menu-ul-->
+        </div>
+        <div class="header-bouton">
+            <a href="#">
+                <button>Login</button>
+            </a><!-- header-bouton-items -->
+            <a href="#">
+                <button>Register</button>
+            </a><!-- header-bouton-items -->
+        </div><!-- header-bouton -->
+    </header>
+
+    
+    <nav class="mobile-navigation-menu" id="mobile-navigation-menu">
+        <div class="mobile-navigation-menu-container" id="mobile-navigation-menu-container">
+            <div class="mobile-line-close">
+                <img src="images/icon-close-menu.svg" onclick="closeMenu()">
+            </div>
+            <ul class="mobile-menu-ul">
+                <li class="mobile-menu-items  mobile-menu-drpdown"><a href="#">Features</a>
+                    <ul class="mobile-sous-menu-ul">
+                        <li class="mobile-sous-menu-items"><a href="#"><img class="mobile-icone-sous-menu-ul" src="images/icon-todo.svg">Todo List</a></li><!--sous-menu-items -->
+                        <li class="mobile-sous-menu-items"><a href="#"><img class="mobile-icone-sous-menu-ul" src="images/icon-calendar.svg">Calendar</a></li><!--sous-menu-items -->
+                        <li class="mobile-sous-menu-items"><a href="#"><img class="mobile-icone-sous-menu-ul" src="images/icon-reminders.svg">Reminders</a></li><!--sous-menu-items -->
+                        <li class="mobile-sous-menu-items"><a href="#"><img class="mobile-icone-sous-menu-ul" src="images/icon-planning.svg">Planning</a></li><!--sous-menu-items -->
+                    </ul>
+                </li><!--li-1-->
+                <li class="mobile-menu-items  mobile-menu-drpdown">
+                    <a href="#">Company</a>
+                    <ul class="mobile-sous-menu-ul">
+                        <li class="mobile-sous-menu-items"><a href="#">History</a></li><!--sous-menu-items -->
+                        <li class="mobile-sous-menu-items"><a href="#">Our Team</a></li><!--sous-menu-items -->
+                        <li class="mobile-sous-menu-items"><a href="#">Blog</a></li><!--sous-menu-items -->
+                    </ul>
+                </li><!--li-3-->
+                <li class="mobile-menu-items  mobile-menu-items-single"><a href="#">Careers</a></li><!--li-3 -->
+                <li class="mobile-menu-items  mobile-menu-items-single"><a href="#">About</a></li><!--li-4-->
+            </ul><!--menu-->    
+            <div class="mobile-header-bouton">
+                <a href="#">
+                    <button>Login</button>
+                </a><!-- header-bouton-items -->
+                <a href="#">
+                    <button>Register</button>
+                </a><!-- header-bouton-items -->
+            </div><!-- header-bouton -->    
+        </div>
+    </nav>
+
+    <!-- menu mobile -->
+    <header class="mobile-header" id="mobile-header">
+        <div class="mobile-logo"><a href="#"><img src="images/logo.svg"></a></div>
+        <div class="hanburguer" id="hamburguer" onclick="openMenu()">
+            <img src="images/icon-menu.svg">
+        </div><!--Hamburger-->
+    </header><!--mobile-header -->
+
+    <!-- corps de la page -->
+    <section class="body-page">
+        <div class="body-page-containers">
+            <div class="body-card body-card-one">
+                <div class="body-page-conatiner">
+                    <div class="titles">
+                        <h3 class="title-one">Make</h3>
+                        <h3 class="title-two">remote work</h3>
+                    </div>
+                    <div class="paragraphes">
+                        <p class="paragraphe-one">Get your team in sync. no matter your location</p>
+                        <p class="paragraphe-two">Streamline processese. create team rituals,and</p>
+                        <p class="paragraphe-three">watch productivity soar</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="#"><button class="button">Learn more</button></a>
+                    </div>
+                    <div class="card-one-footer">
+                        <img class="card-one-img" src="images/client-databiz.svg">
+                        <img class="card-one-img" src="images/client-audiophile.svg">
+                        <img class="card-one-img" src="images/client-meet.svg">
+                        <img class="card-one-img" src="images/client-maker.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="body-card body-card-two">
+                <img src="images/image-hero-mobile.png">
+            </div>
+        </div>
+    </section>
+    <script src="Pages/scripte.js"></script>
+</body>
+</html>
